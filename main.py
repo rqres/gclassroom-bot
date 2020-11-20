@@ -13,8 +13,6 @@ from sheetsapi import code_values
 
 class ClassroomBot:
     def __init__(self, username, pw):
-        #codes = ["o5oemzt", "vys4ua3", "fhk64a4", "4kqf2ia"]
-
         self.driver = Safari()
         #self.driver.maximize_window()
         self.driver.get(
