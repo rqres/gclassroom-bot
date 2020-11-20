@@ -1,3 +1,3 @@
 # gclassroom-bot
 
-Python automation which adds all course codes to a Google Classroom student account using web scraping.
+Python automation which adds course codes from school Excel document to a Google Classroom student account using web scraping.
