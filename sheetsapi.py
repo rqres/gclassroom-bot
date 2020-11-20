@@ -9,15 +9,6 @@ from pprint import pprint
 
 from googleapiclient import discovery
 
-# TODO: Change placeholder below to generate authentication credentials. See
-# https://developers.google.com/sheets/quickstart/python#step_3_set_up_the_sample
-#
-# Authorize using one of the following scopes:
-#     'https://www.googleapis.com/auth/drive'
-#     'https://www.googleapis.com/auth/drive.file'
-#     'https://www.googleapis.com/auth/drive.readonly'
-#     'https://www.googleapis.com/auth/spreadsheets'
-#     'https://www.googleapis.com/auth/spreadsheets.readonly'
 creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
@@ -47,8 +38,6 @@ ranges = 'B24:X24'
 
 request = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range=ranges)
 response = request.execute()
-
-# TODO: Change code below to process the `response` dict:
 
 code_values = response['values'][0]
 
